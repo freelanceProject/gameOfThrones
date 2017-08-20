@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Scada");
 /* line 2, ../sass/main.scss */
 * {
   padding: 0;
@@ -69,19 +71,20 @@ header .container .auth a.reg {
 }
 /* line 55, ../sass/main.scss */
 .wrapper .modal {
+  color: white;
   position: absolute;
   margin: auto;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  width: 900px;
-  height: 500px;
-  background: white;
+  width: 600px;
+  height: 300px;
+  background: #353535;
 }
-/* line 62, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 .wrapper .modal .close {
-  transition: .8s border-radius;
+  transition: .6s border-radius;
   margin: 0;
   padding: 0;
   float: right;
@@ -89,39 +92,69 @@ header .container .auth a.reg {
   height: 30px;
   border: 1px solid #606060;
   position: relative;
-  top: 10px;
-  right: 10px;
-  border-radius: 50%;
-}
-/* line 73, ../sass/main.scss */
-.wrapper .modal .close:hover {
+  top: 5px;
+  right: 5px;
   border-radius: 0;
-  border-color: #181818;
+  transform: scale(0.8);
 }
-/* line 77, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
+.wrapper .modal .close:hover {
+  border-radius: 50%;
+  border-color: #fff;
+}
+/* line 79, ../sass/main.scss */
 .wrapper .modal .close:hover div {
   transition: .5s background-color;
-  background-color: #181818;
+  background-color: #fff;
 }
-/* line 81, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .wrapper .modal .close div {
   height: 24px;
   width: 2px;
   background: #606060;
   position: relative;
   top: 0px;
-  left: 14.5px;
+  left: 14px;
   bottom: 0;
   right: 0;
   transform: translate(10px);
+  transform: scale(0.8);
 }
-/* line 88, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .wrapper .modal .close div.line1 {
   transform: rotate(-45deg);
   top: 3px;
 }
-/* line 92, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .wrapper .modal .close div.line2 {
   transform: rotate(45deg);
   top: -21px;
+}
+/* line 101, ../sass/main.scss */
+.wrapper .modal form {
+  margin-left: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  top: 50px;
+}
+/* line 106, ../sass/main.scss */
+.wrapper .modal form p {
+  margin-top: 10px;
+}
+/* line 109, ../sass/main.scss */
+.wrapper .modal form .btn {
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 4px solid #F7CA18;
+  border-right: 4px solid #F7CA18;
+  border-top: 1px solid #F7CA18;
+  border-left: 1px solid #F7CA18;
+  font-family: 'Exo 2', sans-serif;
+  color: white;
+  transition: .5s all;
+  background: #353535;
+}
+/* line 120, ../sass/main.scss */
+.wrapper .modal form .btn:hover {
+  background: #414040;
 }
