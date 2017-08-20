@@ -11,11 +11,17 @@ header{
   .container{
     width: 1030px;
     margin: 0 auto;
+    .logo{
+      img{
+        width: 220px;
+        height: 88px;
+      }
+    }
     .auth{
       float: right;
-      font-size: 18px;
+      font-size: 16px;
       position: relative;
-      top: 55px;
+      top: 37px;
       a{
         font-family: 'Raleway', sans-serif;
         color: white;

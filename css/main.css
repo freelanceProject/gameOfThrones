@@ -17,25 +17,30 @@ header .container {
   width: 1030px;
   margin: 0 auto;
 }
-/* line 14, ../sass/main.scss */
+/* line 15, ../sass/main.scss */
+header .container .logo img {
+  width: 220px;
+  height: 88px;
+}
+/* line 20, ../sass/main.scss */
 header .container .auth {
   float: right;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
-  top: 55px;
+  top: 37px;
 }
-/* line 19, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 header .container .auth a {
   font-family: 'Raleway', sans-serif;
   color: white;
   padding: 10px 20px 10px 20px;
   margin: 0;
 }
-/* line 24, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 header .container .auth a.login {
   border-right: 1px solid white;
 }
-/* line 27, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 header .container .auth a.reg {
   border-left: 1px solid white;
 }
