@@ -7,6 +7,8 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <title>Game of Thrones</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src="scripts/modal.js">
+  </script>
 </head>
 <body>
   <!--Шапка и авторизация-->
@@ -14,15 +16,15 @@
     <div class =  "container">
       <a class="logo" href="#"><img src="img/logo_1.png" alt=""></a>
       <div class = "auth">
-        <a class = "login" href="#">Log in</a>
+        <a class = "login" href="#" onclick="openModal()">Log in</a>
         <a class = "reg" href="#">Registration</a>
       </div>
     </div>
   </header>
 
-  <div class="wrapper">
+  <div id="wrapper" class="wrapper1">
     <div class="modal">
-      <a href="#" class="close">
+      <a class="close" onclick="closeModal()">
         <div class="line1"></div><div class="line2"></div>
       </a>
       <form action="" method="post">

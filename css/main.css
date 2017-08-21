@@ -9,56 +9,51 @@
   text-decoration: none;
 }
 
-/* line 9, ../sass/main.scss */
-html {
-  height: 2500px;
-}
-
-/* line 12, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 body {
   height: 100%;
 }
 
-/* line 15, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 header {
   border-bottom: 1px solid #2d2d2d;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 18, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 header .container {
   width: 1030px;
   margin: 0 auto;
 }
-/* line 22, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 header .container .logo img {
   margin-top: 5px;
   width: 220px;
   height: 88px;
 }
-/* line 28, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 header .container .auth {
   float: right;
   font-size: 16px;
   position: relative;
   top: 37px;
 }
-/* line 33, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 header .container .auth a {
   font-family: 'Raleway', sans-serif;
   color: white;
   padding: 10px 20px 10px 20px;
   margin: 0;
 }
-/* line 38, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 header .container .auth a.login {
   border-right: 1px solid white;
 }
-/* line 41, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 header .container .auth a.reg {
   border-left: 1px solid white;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -68,8 +63,9 @@ header .container .auth a.reg {
   left: 0;
   bottom: 0;
   right: 0;
+  display: none;
 }
-/* line 55, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .wrapper .modal {
   color: white;
   position: absolute;
@@ -82,7 +78,7 @@ header .container .auth a.reg {
   height: 300px;
   background: #353535;
 }
-/* line 63, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .wrapper .modal .close {
   transition: .6s border-radius;
   margin: 0;
@@ -90,12 +86,13 @@ header .container .auth a.reg {
   float: right;
   width: 30px;
   height: 30px;
-  border: 1px solid #606060;
+  border: 2px solid #F7CA18;
   position: relative;
   top: 5px;
   right: 5px;
   border-radius: 0;
   transform: scale(0.8);
+  cursor: pointer;
 }
 /* line 75, ../sass/main.scss */
 .wrapper .modal .close:hover {
@@ -111,7 +108,7 @@ header .container .auth a.reg {
 .wrapper .modal .close div {
   height: 24px;
   width: 2px;
-  background: #606060;
+  background: #F7CA18;
   position: relative;
   top: 0px;
   left: 14px;
@@ -157,4 +154,9 @@ header .container .auth a.reg {
 /* line 120, ../sass/main.scss */
 .wrapper .modal form .btn:hover {
   background: #414040;
+}
+/* line 123, ../sass/main.scss */
+.wrapper .modal form .btn:active {
+  border-bottom: 1px solid #F7CA18;
+  border-right: 1px solid #F7CA18;
 }
