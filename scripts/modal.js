@@ -14,3 +14,9 @@ function openModal1() {
   var modal = document.getElementById('wrapper2');
   modal.style.display = "block";
 }
+function closeOpen() {
+  var login = document.getElementById('wrapper1');
+  var reg = document.getElementById('wrapper2')
+  reg.style.display = "block";
+  login.style.display = "none";
+}

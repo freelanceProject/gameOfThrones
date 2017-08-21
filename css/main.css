@@ -176,3 +176,8 @@ header .container .auth a.reg {
   left: 45px;
   top: 10px;
 }
+
+/* line 146, ../sass/main.scss */
+#wrapper2 .modal {
+  height: 500px;
+}
