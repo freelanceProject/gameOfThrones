@@ -160,3 +160,19 @@ header .container .auth a.reg {
   border-bottom: 1px solid #F7CA18;
   border-right: 1px solid #F7CA18;
 }
+/* line 129, ../sass/main.scss */
+.wrapper .modal .question {
+  float: right;
+  position: relative;
+  top: 110px;
+  right: 40px;
+  font-family: 'Ubuntu', sans-serif;
+}
+/* line 135, ../sass/main.scss */
+.wrapper .modal .question a {
+  color: #F7CA18;
+  text-decoration: underline;
+  position: relative;
+  left: 45px;
+  top: 10px;
+}

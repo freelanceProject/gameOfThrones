@@ -17,14 +17,34 @@
       <a class="logo" href="#"><img src="img/logo_1.png" alt=""></a>
       <div class = "auth">
         <a class = "login" href="#" onclick="openModal()">Log in</a>
-        <a class = "reg" href="#">Registration</a>
+        <a class = "reg" href="#" onclick="openModal1()">Registration</a>
       </div>
     </div>
   </header>
 
-  <div id="wrapper" class="wrapper1">
+  <div id="wrapper1" class="wrapper">
     <div class="modal">
       <a class="close" onclick="closeModal()">
+        <div class="line1"></div><div class="line2"></div>
+      </a>
+      <form action="" method="post">
+        <h3>Login</h2>
+        <p>Username:</p>
+        <input type="text" size="40">
+        <p>Password:</p>
+        <input type="text" size="40"> <br/> <br/>
+        <label><input type="checkbox" name="checkbox" /> Someone else's computer</label><br /> <br>
+        <a href="#" class="btn"><b>LOGIN</b></a>
+      </form>
+      <div class="question">
+        <p>For first time on site?</p>
+        <a href="#" oclick="closeOpen()">Register</a>
+      </div>
+    </div>
+  </div>
+  <div id = "wrapper2" class = "wrapper">
+    <div class="modal">
+      <a class="close" onclick="closeModal1()">
         <div class="line1"></div><div class="line2"></div>
       </a>
       <form action="" method="post">
