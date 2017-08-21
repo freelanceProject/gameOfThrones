@@ -31,15 +31,15 @@
       <form action="" method="post">
         <h3>Login</h2>
         <p>Username:</p>
-        <input type="text" size="40">
+        <input type="text" size="40" name = "login">
         <p>Password:</p>
-        <input type="text" size="40"> <br/> <br/>
+        <input type="text" size="40" name = "password"> <br/> <br/>
         <label><input type="checkbox" name="checkbox" /> Someone else's computer</label><br /> <br>
-        <a href="#" class="btn"><b>LOGIN</b></a>
+        <button class="btn" name = "button"><b>LOGIN</b></button>
       </form>
       <div class="question">
         <p>For first time on site?</p>
-        <a href="#" oclick="closeOpen()">Register</a>
+        <a href="#" onclick="closeOpen()">Register</a>
       </div>
     </div>
   </div>
@@ -51,17 +51,19 @@
       <form action="" method="post">
         <h3>Registration</h2>
         <p>Username:</p>
-        <input type="text" size="40">
+        <input type="text" size="40" name = "login">
         <p>Password:</p>
-        <input type="text" size="40"> <br/>
+        <input type="text" size="40" name = "password"> <br/>
         <p>Repeat password:</p>
-        <input type="text" size="40"> <br/>
+        <input type="text" size="40" name = "repeat_pass"> <br/>
         <p>Email:</p>
-        <input type="text" size="40"> <br/><br/> <br/>
-        <button class="g-recaptcha btn" data-sitekey="6Le2ly0UAAAAAImyNE_IPaBxC-zJVdWMS8Sk-PEW" data-callback="YourOnSubmitFn">
-          <b>REGISTER</b>
-        </button>
+        <input type="text" size="40" name = "mail"> <br/><br/>
+        <button class="btn" name = "button"><b>REGISTER</b></button>
       </form>
+      <div class="question">
+        <p>Have already been registred?</p>
+        <a href="#" onclick="closeOpen1()">Login</a>
+      </div>
     </div>
   </div>
 </body>

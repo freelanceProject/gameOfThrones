@@ -48,12 +48,8 @@ header .container .auth a {
 header .container .auth a.login {
   border-right: 1px solid white;
 }
-/* line 39, ../sass/main.scss */
-header .container .auth a.reg {
-  border-left: 1px solid white;
-}
 
-/* line 47, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -65,7 +61,7 @@ header .container .auth a.reg {
   right: 0;
   display: none;
 }
-/* line 54, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .wrapper .modal {
   color: white;
   position: absolute;
@@ -78,7 +74,7 @@ header .container .auth a.reg {
   height: 300px;
   background: #353535;
 }
-/* line 62, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .wrapper .modal .close {
   transition: .6s border-radius;
   margin: 0;
@@ -94,17 +90,17 @@ header .container .auth a.reg {
   transform: scale(0.8);
   cursor: pointer;
 }
-/* line 75, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .wrapper .modal .close:hover {
   border-radius: 50%;
   border-color: #fff;
 }
-/* line 79, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 .wrapper .modal .close:hover div {
   transition: .5s background-color;
   background-color: #fff;
 }
-/* line 83, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 .wrapper .modal .close div {
   height: 24px;
   width: 2px;
@@ -117,30 +113,30 @@ header .container .auth a.reg {
   transform: translate(10px);
   transform: scale(0.8);
 }
-/* line 91, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .wrapper .modal .close div.line1 {
   transform: rotate(-45deg);
   top: 3px;
 }
-/* line 95, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .wrapper .modal .close div.line2 {
   transform: rotate(45deg);
   top: -21px;
 }
-/* line 101, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .wrapper .modal form {
   margin-left: 20px;
   font-family: 'Ubuntu', sans-serif;
   position: absolute;
   top: 50px;
 }
-/* line 106, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .wrapper .modal form p {
   margin-top: 10px;
 }
-/* line 109, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .wrapper .modal form .btn {
-  padding: 15px 40px;
+  padding: 10px 30px;
   background: #fff;
   border-bottom: 4px solid #F7CA18;
   border-right: 4px solid #F7CA18;
@@ -151,16 +147,16 @@ header .container .auth a.reg {
   transition: .5s all;
   background: #353535;
 }
-/* line 120, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .wrapper .modal form .btn:hover {
   background: #414040;
 }
-/* line 123, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .wrapper .modal form .btn:active {
   border-bottom: 1px solid #F7CA18;
   border-right: 1px solid #F7CA18;
 }
-/* line 129, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .wrapper .modal .question {
   float: right;
   position: relative;
@@ -168,7 +164,7 @@ header .container .auth a.reg {
   right: 40px;
   font-family: 'Ubuntu', sans-serif;
 }
-/* line 135, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 .wrapper .modal .question a {
   color: #F7CA18;
   text-decoration: underline;
@@ -177,7 +173,15 @@ header .container .auth a.reg {
   top: 10px;
 }
 
-/* line 146, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 #wrapper2 .modal {
-  height: 500px;
+  height: 350px;
+}
+/* line 146, ../sass/main.scss */
+#wrapper2 .modal .question {
+  right: 25px;
+}
+/* line 148, ../sass/main.scss */
+#wrapper2 .modal .question a {
+  left: 80px;
 }

@@ -20,3 +20,9 @@ function closeOpen() {
   reg.style.display = "block";
   login.style.display = "none";
 }
+function closeOpen1() {
+  var login = document.getElementById('wrapper1');
+  var reg = document.getElementById('wrapper2')
+  reg.style.display = "none";
+  login.style.display = "block";
+}

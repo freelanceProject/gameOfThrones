@@ -36,9 +36,7 @@ header{
         &.login{
           border-right: 1px solid white;
         }
-        &.reg{
-          border-left: 1px solid white;
-        }
+
       }
     }
   }
@@ -107,7 +105,7 @@ header{
         margin-top:10px;
       }
       .btn{
-        padding: 15px 40px;
+        padding: 10px 30px;
         background: #fff;
         border-bottom: 4px solid #F7CA18;
         border-right: 4px solid #F7CA18;
@@ -144,6 +142,12 @@ header{
 }
 #wrapper2{
   .modal{
-    height: 500px;
+    height: 350px;
+    .question{
+      right: 25px;
+      a{
+        left: 80px;
+      }
+    }
   }
 }
