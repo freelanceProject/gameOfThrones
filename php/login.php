@@ -1,5 +1,5 @@
 <?php
-$data = $_POST;
+$data = htmlspecialchars($_POST);
 $errors = '';
 
 if ( isset($data['do_login']) )
@@ -10,11 +10,7 @@ if ( isset($data['do_login']) )
     if (password_verify($data['password'], $user->password) )
     {
       echo '<h2 style="color:green;">Вы успешно авторизовались!. Перенаправление...</h2>'; 
-      ?>
-      <script type="text/javascript">
-      window.location = "/"
-      </script>
-      <?php
+      header('/')
     }
     else
     {

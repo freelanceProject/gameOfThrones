@@ -1,11 +1,11 @@
 <?php
 
-$data = $_POST;
+$data = htmlspecialchars($_POST);
 
 $errors = array();
 
-$data['login'] = trim($data['login'] );
-$data['email'] = trim($data['email'] );
+$data['login'] = htmlspecialchars(trim($data['login'] ));
+$data['email'] = htmlspecialchars(trim($data['email'] ));
 
 
 if ( isset($data['do_signup']) ){

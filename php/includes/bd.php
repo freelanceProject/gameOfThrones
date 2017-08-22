@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 require "rb.php";
 
- R::setup( 'mysql:host=localhost;dbname=bd_1',
-        'root', '123' );
+ R::setup( 'mysql:host=127.0.0.1;dbname=game',
+        'root', '' );
 
 ?>
