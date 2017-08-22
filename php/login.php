@@ -1,13 +1,15 @@
 <?php
-$data = htmlspecialchars($_POST);
+$data = $_POST['do_login'];
+$login = htmlspecialchars($_POST['login']);
+$password = htmlspecialchars($_POST['password'])
 $errors = '';
 
-if ( isset($data['do_login']) )
+if ( isset($data) )
 {
-  $user = R::findOne('users', 'login = ?', array($data['login']) );
+  $user = R::findOne('users', 'login = ?', array($login) );
   if ($user)
   {
-    if (password_verify($data['password'], $user->password) )
+    if (password_verify($password, $user->password) )
     {
       echo '<h2 style="color:green;">Вы успешно авторизовались!. Перенаправление...</h2>'; 
       header('/')
@@ -23,7 +25,7 @@ if ( isset($data['do_login']) )
 
   if(!empty($errors) )
   {
-    echo '<h3 style="color:red;">'.$errors.'</h3><br>';
+    echo '<h3 style="color:#ff0000;">' .$errors.'</h3><br>';
   }
 
 }

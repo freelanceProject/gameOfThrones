@@ -1,11 +1,12 @@
 <?php
 
-$data = htmlspecialchars($_POST);
+$data = $_POST;
 
 $errors = array();
 
 $data['login'] = htmlspecialchars(trim($data['login'] ));
 $data['email'] = htmlspecialchars(trim($data['email'] ));
+$password = htmlspecialchars($data['password']);
 
 
 if ( isset($data['do_signup']) ){
@@ -21,12 +22,12 @@ if ( isset($data['do_signup']) ){
   }
 
   #3
-  if ( strlen($data['password']) < 6){
+  if ( strlen($password) < 6){
     $errors[] = 'Длина пароля должна быть больше 6 символов.';
   }
 
   #4
-  if ( $data['password'] != $data['password_2']  ){
+  if ( $password != $data['password_2']  ){
     $errors[] = 'Ваши пароли не совпадают.';
   }
 
@@ -45,7 +46,7 @@ if ( isset($data['do_signup']) ){
   {
     $user = R::dispense('users');
     $user->login = $data['login'];
-    $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
+    $user->password = password_hash($password, PASSWORD_DEFAULT);
     $user->email = $data['email'];
     R::store($user);
     echo '<h2 style="color:green;">Регестрация успешно выполнена. Перенаправление...</h2>'; 
