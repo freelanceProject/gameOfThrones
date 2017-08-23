@@ -48,7 +48,7 @@
       <a class="close" onclick="closeModal1()">
         <div class="line1"></div><div class="line2"></div>
       </a>
-      <form action="" method="POST">
+      <form action method="POST">
         <h3>Registration</h2>
         <p>Username:</p>
         <input type="text" size="40" name = "login">
