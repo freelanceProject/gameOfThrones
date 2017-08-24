@@ -50,9 +50,10 @@ if ( isset($data['do_signup']) ){
     $user->email = $data['email'];
     R::store($user);
     echo '<h2 style="color:green;">Регестрация успешно выполнена. Перенаправление...</h2>'; 
+    $_SESSION['login'] = $user->login;
     ?>
     <script type="text/javascript">
-    window.location = "/"
+    window.location = "/php/log_in.php"
     </script>
 
   <?php

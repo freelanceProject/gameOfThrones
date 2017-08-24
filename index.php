@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,19 +14,39 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="scripts/modal.js">
   </script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <!--Шапка и авторизация-->
   <header>
     <div class =  "container">
-      <a class="logo" href="#"><img src="img/logo_1.png" alt=""></a>
+      <a class="logo" href="index.php"><img src="img/logo_1.png" alt=""></a>
       <div class = "auth">
+        <?php 
+          if( !isset($_COOKIE['login']) and !isset($_SESSION['login_done']) ) // Если пользователь не авторизован, вывод входа/регистрации.
+          {
+        ?>
         <a class = "login" href="#" onclick="openModal()">Log in</a>
         <a class = "reg" href="#" onclick="openModal1()">Registration</a>
+        <?php 
+          }
+
+          elseif(isset($_COOKIE['login']) or isset($_SESSION['login_done']))
+          {
+              echo '<a class="login" href="#">'.$_COOKIE['login'].'</a>'; // Если авторизован, выводим его ник.
+              ?>
+              <a class="reg" href="php/logout.php">Logout</a>
+              <?php
+          }
+          ?>
       </div>
     </div>
   </header>
+
+<?php
+
+    if( !isset($_COOKIE['login']) and !isset($_SESSION['login_done'])  ) // Если пользователь не авторизован, вывод входа/регистрации.
+    {
+?>
 
   <div id="wrapper1" class="wrapper">
     <div class="modal">
@@ -29,7 +54,7 @@
         <div class="line1"></div><div class="line2"></div>
       </a>
       <form method="POST">
-        <h3>Login</h2>
+        <h3>Login</h3>
         <p>Username:</p>
         <input type="text" size="40" name = "login">
         <p>Password:</p>
@@ -49,7 +74,7 @@
         <div class="line1"></div><div class="line2"></div>
       </a>
       <form action method="POST">
-        <h3>Registration</h2>
+        <h3>Registration</h3>
         <p>Username:</p>
         <input type="text" size="40" name = "login">
         <p>Password:</p>
@@ -66,9 +91,20 @@
       </div>
     </div>
   </div>
+  <?php
+    }
+  ?>
+  <nav class="container">
+      <a href="#">Watch online</a>
+      <a href="#">Actors</a>
+      <a href="#">News</a>
+      <a href="#">Other</a>
+  </nav>
+  <div class="main">
+      <div class="container"></div>
+  </div>
 </body>
 </html>
-
 
 <?php
 require_once "php/includes/bd.php";

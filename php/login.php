@@ -1,10 +1,10 @@
 <?php
-$data = $_POST['do_login'];
+$data = $_POST;
 $login = htmlspecialchars($_POST['login']);
 $password = htmlspecialchars($_POST['password']);
 $errors = '';
 
-if ( isset($data) )
+if ( isset($data['do_login']) )
 {
   $user = R::findOne('users', 'login = ?', array($login) );
   if ($user)
@@ -12,10 +12,12 @@ if ( isset($data) )
     if (password_verify($password, $user->password) )
     {
       echo '<h2 style="color:green;">Вы успешно авторизовались!. Перенаправление...</h2>'; 
+      $_SESSION['login'] = $user->login;
+      $_SESSION['time'] = $data['checkbox'];
       ?>
-      <script type="text/javascript">
-        window.location = "/"
-      </script>
+    <script type="text/javascript">
+    window.location = "/php/log_in.php"
+    </script>
 
   <?php
     }

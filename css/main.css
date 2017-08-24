@@ -9,47 +9,53 @@
   text-decoration: none;
 }
 
-/* line 10, ../sass/main.scss */
-body {
-  height: 100%;
-}
-
-/* line 13, ../sass/main.scss */
-header {
-  border-bottom: 1px solid #2d2d2d;
-  background: rgba(0, 0, 0, 0.8);
-}
-/* line 16, ../sass/main.scss */
-header .container {
+/* line 8, ../sass/main.scss */
+.container {
   width: 1030px;
   margin: 0 auto;
 }
-/* line 20, ../sass/main.scss */
-header .container .logo img {
+
+/* line 12, ../sass/main.scss */
+body {
+  height: 100%;
+  background: url(../img/background_2.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 19, ../sass/main.scss */
+header {
+  margin-bottom: 170px;
+  border-bottom: 1px solid #2d2d2d;
+  background: rgba(0, 0, 0, 0.8);
+}
+/* line 24, ../sass/main.scss */
+header .logo img {
   margin-top: 5px;
   width: 220px;
   height: 88px;
 }
-/* line 26, ../sass/main.scss */
-header .container .auth {
+/* line 30, ../sass/main.scss */
+header .auth {
   float: right;
   font-size: 16px;
   position: relative;
   top: 37px;
 }
-/* line 31, ../sass/main.scss */
-header .container .auth a {
+/* line 35, ../sass/main.scss */
+header .auth a {
   font-family: 'Raleway', sans-serif;
   color: white;
   padding: 10px 20px 10px 20px;
   margin: 0;
 }
-/* line 36, ../sass/main.scss */
-header .container .auth a.login {
+/* line 40, ../sass/main.scss */
+header .auth a.login {
   border-right: 1px solid white;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -61,7 +67,7 @@ header .container .auth a.login {
   right: 0;
   display: none;
 }
-/* line 51, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .wrapper .modal {
   color: white;
   position: absolute;
@@ -74,7 +80,7 @@ header .container .auth a.login {
   height: 300px;
   background: #353535;
 }
-/* line 59, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .wrapper .modal .close {
   transition: .6s border-radius;
   margin: 0;
@@ -90,17 +96,17 @@ header .container .auth a.login {
   transform: scale(0.8);
   cursor: pointer;
 }
-/* line 72, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .wrapper .modal .close:hover {
   border-radius: 50%;
   border-color: #fff;
 }
-/* line 76, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 .wrapper .modal .close:hover div {
   transition: .5s background-color;
   background-color: #fff;
 }
-/* line 80, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .wrapper .modal .close div {
   height: 24px;
   width: 2px;
@@ -113,28 +119,28 @@ header .container .auth a.login {
   transform: translate(10px);
   transform: scale(0.8);
 }
-/* line 88, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .wrapper .modal .close div.line1 {
   transform: rotate(-45deg);
   top: 3px;
 }
-/* line 92, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .wrapper .modal .close div.line2 {
   transform: rotate(45deg);
   top: -21px;
 }
-/* line 98, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .wrapper .modal form {
   margin-left: 20px;
   font-family: 'Ubuntu', sans-serif;
   position: absolute;
   top: 50px;
 }
-/* line 103, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .wrapper .modal form p {
   margin-top: 10px;
 }
-/* line 106, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .wrapper .modal form .btn {
   padding: 10px 30px;
   background: #fff;
@@ -147,16 +153,16 @@ header .container .auth a.login {
   transition: .5s all;
   background: #353535;
 }
-/* line 117, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .wrapper .modal form .btn:hover {
   background: #414040;
 }
-/* line 120, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .wrapper .modal form .btn:active {
   border-bottom: 1px solid #F7CA18;
   border-right: 1px solid #F7CA18;
 }
-/* line 126, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .wrapper .modal .question {
   float: right;
   position: relative;
@@ -164,7 +170,7 @@ header .container .auth a.login {
   right: 40px;
   font-family: 'Ubuntu', sans-serif;
 }
-/* line 132, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .wrapper .modal .question a {
   color: #F7CA18;
   text-decoration: underline;
@@ -173,15 +179,54 @@ header .container .auth a.login {
   top: 10px;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 #wrapper2 .modal {
   height: 350px;
 }
-/* line 145, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 #wrapper2 .modal .question {
   right: 25px;
 }
-/* line 147, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 #wrapper2 .modal .question a {
   left: 80px;
+}
+
+/* line 156, ../sass/main.scss */
+nav {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  height: 50px;
+}
+/* line 162, ../sass/main.scss */
+nav a {
+  transition: .3s background;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 19px;
+  flex-grow: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  color: #ffffff;
+  text-align: center;
+  border-right: 1px solid white;
+  padding-top: 12px;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 175, ../sass/main.scss */
+nav a:last-child {
+  border: 0;
+}
+/* line 178, ../sass/main.scss */
+nav a:hover {
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 3px solid #f1c91a;
+}
+
+/* line 185, ../sass/main.scss */
+.main .container {
+  height: 1690px;
+  background: #ffffff;
 }
