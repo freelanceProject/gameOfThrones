@@ -51,8 +51,7 @@ body {
 
 /* line 31, ../sass/main.scss */
 .big {
-  width: 100%;
-  height: 1173px;
+  height: 1089px;
   z-index: 0;
   background: url(../img/background_2.png);
   background-repeat: no-repeat;
@@ -60,38 +59,49 @@ body {
   background-size: cover;
 }
 
-/* line 40, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 header {
   margin-bottom: 170px;
   border-bottom: 1px solid #2d2d2d;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 45, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 header .logo img {
   margin-top: 5px;
   width: 220px;
   height: 88px;
 }
-/* line 51, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
+header .logo span {
+  color: #f5f5f5;
+  font-size: 30px;
+  position: relative;
+  top: -13px;
+}
+/* line 57, ../sass/main.scss */
 header .auth {
   float: right;
   font-size: 16px;
   position: relative;
   top: 37px;
 }
-/* line 56, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 header .auth a {
   font-family: 'Raleway', sans-serif;
   color: white;
   padding: 10px 20px 10px 20px;
   margin: 0;
 }
-/* line 61, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 header .auth a.login {
   border-right: 1px solid white;
 }
+/* line 70, ../sass/main.scss */
+header .auth a:hover {
+  color: #b5b5b5;
+}
 
-/* line 68, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 .wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -103,7 +113,7 @@ header .auth a.login {
   right: 0;
   display: none;
 }
-/* line 75, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .wrapper .modal {
   color: white;
   position: absolute;
@@ -116,7 +126,7 @@ header .auth a.login {
   height: 300px;
   background: #353535;
 }
-/* line 83, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .wrapper .modal .close {
   transition: .6s border-radius;
   margin: 0;
@@ -132,17 +142,17 @@ header .auth a.login {
   transform: scale(0.8);
   cursor: pointer;
 }
-/* line 96, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .wrapper .modal .close:hover {
   border-radius: 50%;
   border-color: #fff;
 }
-/* line 100, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .wrapper .modal .close:hover div {
   transition: .5s background-color;
   background-color: #fff;
 }
-/* line 104, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .wrapper .modal .close div {
   height: 24px;
   width: 2px;
@@ -155,28 +165,28 @@ header .auth a.login {
   transform: translate(10px);
   transform: scale(0.8);
 }
-/* line 112, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .wrapper .modal .close div.line1 {
   transform: rotate(-45deg);
   top: 3px;
 }
-/* line 116, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .wrapper .modal .close div.line2 {
   transform: rotate(45deg);
   top: -21px;
 }
-/* line 122, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .wrapper .modal form {
   margin-left: 20px;
   font-family: 'Ubuntu', sans-serif;
   position: absolute;
   top: 50px;
 }
-/* line 127, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .wrapper .modal form p {
   margin-top: 10px;
 }
-/* line 130, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .wrapper .modal form .btn {
   padding: 10px 30px;
   background: #fff;
@@ -189,16 +199,16 @@ header .auth a.login {
   transition: .5s all;
   background: #353535;
 }
-/* line 141, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .wrapper .modal form .btn:hover {
   background: #414040;
 }
-/* line 144, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .wrapper .modal form .btn:active {
   border-bottom: 1px solid #F7CA18;
   border-right: 1px solid #F7CA18;
 }
-/* line 150, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .wrapper .modal .question {
   float: right;
   position: relative;
@@ -206,7 +216,7 @@ header .auth a.login {
   right: 40px;
   font-family: 'Ubuntu', sans-serif;
 }
-/* line 156, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 .wrapper .modal .question a {
   color: #F7CA18;
   text-decoration: underline;
@@ -215,20 +225,20 @@ header .auth a.login {
   top: 10px;
 }
 
-/* line 167, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 #wrapper2 .modal {
   height: 350px;
 }
-/* line 169, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 #wrapper2 .modal .question {
   right: 25px;
 }
-/* line 171, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 #wrapper2 .modal .question a {
   left: 80px;
 }
 
-/* line 177, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 nav {
   display: flex;
   display: -webkit-box;
@@ -236,7 +246,7 @@ nav {
   display: -ms-flexbox;
   height: 50px;
 }
-/* line 183, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 nav a {
   color: #ffffff;
   transition: .3s background;
@@ -251,28 +261,27 @@ nav a {
   padding-top: 12px;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 196, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 nav a:last-child {
   border: 0;
 }
-/* line 199, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 nav a:hover {
   background: rgba(0, 0, 0, 0.9);
   border-bottom: 3px solid #f1c91a;
 }
 
-/* line 206, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 .main .container {
-  height: 1690px;
   background: #ffffff;
   margin-bottom: 35px;
 }
-/* line 210, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .main .container .line {
   margin-left: 15px;
   margin-right: 15px;
 }
-/* line 213, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .main .container .line .main-video {
   background: #000;
   margin-top: 35px;
@@ -281,7 +290,7 @@ nav a:hover {
   width: 80%;
   border: 1px solid black;
 }
-/* line 221, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .main .container .line .sidebar {
   margin-top: 35px;
   min-height: 465px;
@@ -291,7 +300,7 @@ nav a:hover {
   display: flex;
   flex-flow: column;
 }
-/* line 229, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .main .container .line .sidebar .block {
   border: 1px solid black;
   background: #000;
@@ -300,18 +309,18 @@ nav a:hover {
   width: 100%;
   margin-bottom: 15px;
 }
-/* line 237, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 .main .container .line .sidebar .block3 {
   margin-bottom: 0;
 }
-/* line 240, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 .main .container .line .sidebar p {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
   font-size: 18px;
   margin-bottom: 5px;
 }
-/* line 247, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .main .container .line .info {
   margin-top: 15px;
   min-height: 1020px;
@@ -319,13 +328,74 @@ nav a:hover {
   width: 70%;
   float: left;
 }
-/* line 254, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 .main .container .line .sidebar1 {
   float: left;
   margin-top: 15px;
   margin-left: 10px;
 }
-/* line 258, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 .main .container .line .sidebar1 .fb-page {
   margin-top: 20px;
+}
+/* line 271, ../sass/main.scss */
+.main .container footer {
+  font-family: 'Ubuntu', sans-serif;
+  height: 60px;
+  width: 100%;
+  background: #353535;
+  position: relative;
+  top: 15px;
+  border-radius: 0 0 3px 3px;
+}
+/* line 279, ../sass/main.scss */
+.main .container footer:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: -10px;
+  width: 30px;
+  height: 60px;
+  background: #323232;
+}
+/* line 288, ../sass/main.scss */
+.main .container footer:after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: -10px;
+  width: 30px;
+  height: 60px;
+  background: #323232;
+}
+/* line 297, ../sass/main.scss */
+.main .container footer .text {
+  color: white;
+  position: relative;
+  top: 20px;
+}
+/* line 301, ../sass/main.scss */
+.main .container footer .text span {
+  color: #b5b5b5;
+}
+/* line 305, ../sass/main.scss */
+.main .container footer .a {
+  position: relative;
+  top: 20px;
+  float: right;
+}
+/* line 309, ../sass/main.scss */
+.main .container footer .a a {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #F7CA18;
+  border-right: 1px solid #717171;
+}
+/* line 313, ../sass/main.scss */
+.main .container footer .a a:hover {
+  color: #c2c2c2;
+}
+/* line 317, ../sass/main.scss */
+.main .container footer .a a:last-child {
+  border: 0;
 }

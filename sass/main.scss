@@ -29,8 +29,7 @@ body{
   background-color: #222222;
 }
 .big{
-  width: 100%;
-  height: 1173px;
+  height: 1089px;
   z-index: 0;
   background: url(../img/background_2.png);
   background-repeat:no-repeat;
@@ -47,6 +46,13 @@ header{
         width: 220px;
         height: 88px;
       }
+
+      span{
+        color: #f5f5f5;
+        font-size: 30px;
+        position: relative;
+        top: -13px;
+      }
     }
     .auth{
       float: right;
@@ -60,6 +66,9 @@ header{
         margin: 0;
         &.login{
           border-right: 1px solid white;
+        }
+        &:hover{
+          color: #b5b5b5;
         }
       }
     }
@@ -204,7 +213,6 @@ nav{
 }
 .main{
   .container{
-    height: 1690px;
     background: #ffffff;
     margin-bottom: 35px;
     .line {
@@ -257,6 +265,58 @@ nav{
         margin-left: 10px;
         .fb-page{
           margin-top: 20px;
+        }
+      }
+    }
+    footer{
+      font-family: 'Ubuntu', sans-serif;
+      height: 60px;
+      width: 100%;
+      background: #353535;
+      position: relative;
+      top: 15px;
+      border-radius: 0 0 3px 3px;
+      &:before{
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: -10px;
+        width: 30px;
+        height: 60px;
+        background: #323232;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        right: -30px;
+        top: -10px;
+        width: 30px;
+        height: 60px;
+        background: #323232;
+      }
+     .text{
+        color: white;
+        position: relative;
+        top: 20px;
+        span{
+          color: #b5b5b5;
+        }
+      }
+      .a {
+        position: relative;
+        top: 20px;
+        float: right;
+        a {
+          padding-right: 10px;
+          padding-left: 10px;
+          color: #F7CA18;
+          &:hover {
+            color: #c2c2c2;
+          }
+          border-right: 1px solid #717171;
+          &:last-child {
+            border: 0;
+          }
         }
       }
     }

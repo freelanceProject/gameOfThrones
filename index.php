@@ -29,7 +29,7 @@ session_start();
   <!--Шапка и авторизация-->
   <header>
     <div class = "container">
-      <a class="logo" href="index.php"><img src="img/logo_1.png" alt=""></a>
+        <a class="logo" href="index.php"><img src="img/logo_1.png" alt=""/><span><b>.</b> ZZZ</span></a>
       <div class = "auth">
         <?php 
           if( !isset($_COOKIE['login']) and !isset($_SESSION['login_done']) ) // Если пользователь не авторизован, вывод входа/регистрации.
@@ -121,7 +121,7 @@ session_start();
                 <div class="block3 block"></div>
             </div>
             </div>
-            <div class="line">
+            <div class="line clearfix">
                 <div class="info"></div>
                 <div class="sidebar1">
                     <!-- VK Widget -->
@@ -132,6 +132,14 @@ session_start();
                     <div class="fb-page" data-href="https://www.facebook.com/GameOfThrones/?fref=ts" data-tabs="timeline" data-width="290" data-height="798" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GameOfThrones/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GameOfThrones/?fref=ts">Game of Thrones</a></blockquote></div>
                 </div>
             </div>
+            <footer>
+                <span class="text"><span>&copy;2017</span> GameOfThrones.zzz - All right reserved</span>
+                <div class="a">
+                    <a href="#">Watch online</a>
+                    <a href="#">Actors</a>
+                    <a href="#">News</a>
+                </div>
+            </footer>
         </div>
     </div>
 </div>
