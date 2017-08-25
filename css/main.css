@@ -1,61 +1,72 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Exo+2|Scada");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 /* line 2, ../sass/main.scss */
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
+  z-index: 33;
+  box-sizing: border-box;
 }
 
-/* line 8, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 .container {
   width: 1030px;
   margin: 0 auto;
 }
 
-/* line 12, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 body {
   height: 100%;
+  background-color: #222222;
+}
+
+/* line 18, ../sass/main.scss */
+.big {
+  width: 100%;
+  height: 1173px;
+  z-index: 0;
   background: url(../img/background_2.png);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-/* line 19, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 header {
   margin-bottom: 170px;
   border-bottom: 1px solid #2d2d2d;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 24, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 header .logo img {
   margin-top: 5px;
   width: 220px;
   height: 88px;
 }
-/* line 30, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 header .auth {
   float: right;
   font-size: 16px;
   position: relative;
   top: 37px;
 }
-/* line 35, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 header .auth a {
   font-family: 'Raleway', sans-serif;
   color: white;
   padding: 10px 20px 10px 20px;
   margin: 0;
 }
-/* line 40, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 header .auth a.login {
   border-right: 1px solid white;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .wrapper {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -67,7 +78,7 @@ header .auth a.login {
   right: 0;
   display: none;
 }
-/* line 54, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .wrapper .modal {
   color: white;
   position: absolute;
@@ -80,7 +91,7 @@ header .auth a.login {
   height: 300px;
   background: #353535;
 }
-/* line 62, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .wrapper .modal .close {
   transition: .6s border-radius;
   margin: 0;
@@ -96,17 +107,17 @@ header .auth a.login {
   transform: scale(0.8);
   cursor: pointer;
 }
-/* line 75, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .wrapper .modal .close:hover {
   border-radius: 50%;
   border-color: #fff;
 }
-/* line 79, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .wrapper .modal .close:hover div {
   transition: .5s background-color;
   background-color: #fff;
 }
-/* line 83, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .wrapper .modal .close div {
   height: 24px;
   width: 2px;
@@ -119,28 +130,28 @@ header .auth a.login {
   transform: translate(10px);
   transform: scale(0.8);
 }
-/* line 91, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .wrapper .modal .close div.line1 {
   transform: rotate(-45deg);
   top: 3px;
 }
-/* line 95, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .wrapper .modal .close div.line2 {
   transform: rotate(45deg);
   top: -21px;
 }
-/* line 101, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .wrapper .modal form {
   margin-left: 20px;
   font-family: 'Ubuntu', sans-serif;
   position: absolute;
   top: 50px;
 }
-/* line 106, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .wrapper .modal form p {
   margin-top: 10px;
 }
-/* line 109, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .wrapper .modal form .btn {
   padding: 10px 30px;
   background: #fff;
@@ -153,16 +164,16 @@ header .auth a.login {
   transition: .5s all;
   background: #353535;
 }
-/* line 120, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .wrapper .modal form .btn:hover {
   background: #414040;
 }
-/* line 123, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .wrapper .modal form .btn:active {
   border-bottom: 1px solid #F7CA18;
   border-right: 1px solid #F7CA18;
 }
-/* line 129, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .wrapper .modal .question {
   float: right;
   position: relative;
@@ -170,7 +181,7 @@ header .auth a.login {
   right: 40px;
   font-family: 'Ubuntu', sans-serif;
 }
-/* line 135, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .wrapper .modal .question a {
   color: #F7CA18;
   text-decoration: underline;
@@ -179,20 +190,20 @@ header .auth a.login {
   top: 10px;
 }
 
-/* line 146, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 #wrapper2 .modal {
   height: 350px;
 }
-/* line 148, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 #wrapper2 .modal .question {
   right: 25px;
 }
-/* line 150, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 #wrapper2 .modal .question a {
   left: 80px;
 }
 
-/* line 156, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 nav {
   display: flex;
   display: -webkit-box;
@@ -200,8 +211,9 @@ nav {
   display: -ms-flexbox;
   height: 50px;
 }
-/* line 162, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 nav a {
+  color: #ffffff;
   transition: .3s background;
   font-family: 'Ubuntu', sans-serif;
   font-size: 19px;
@@ -209,24 +221,67 @@ nav a {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
-  color: #ffffff;
   text-align: center;
   border-right: 1px solid white;
   padding-top: 12px;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 175, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 nav a:last-child {
   border: 0;
 }
-/* line 178, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 nav a:hover {
   background: rgba(0, 0, 0, 0.9);
   border-bottom: 3px solid #f1c91a;
 }
 
-/* line 185, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .main .container {
   height: 1690px;
   background: #ffffff;
+}
+/* line 196, ../sass/main.scss */
+.main .container .line {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* line 199, ../sass/main.scss */
+.main .container .line .main-video {
+  background: #000;
+  margin-top: 35px;
+  min-height: 465px;
+  float: left;
+  width: 80%;
+  border: 1px solid black;
+}
+/* line 207, ../sass/main.scss */
+.main .container .line .sidebar {
+  margin-top: 35px;
+  min-height: 465px;
+  width: 19%;
+  float: left;
+  margin-left: 10px;
+  display: flex;
+  flex-flow: column;
+}
+/* line 215, ../sass/main.scss */
+.main .container .line .sidebar .block {
+  border: 1px solid black;
+  background: #000;
+  width: inherit;
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* line 223, ../sass/main.scss */
+.main .container .line .sidebar .block3 {
+  margin-bottom: 0;
+}
+/* line 226, ../sass/main.scss */
+.main .container .line .sidebar p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
 }

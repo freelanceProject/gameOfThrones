@@ -16,9 +16,10 @@ session_start();
   </script>
 </head>
 <body>
+<div class="big">
   <!--Шапка и авторизация-->
   <header>
-    <div class =  "container">
+    <div class = "container">
       <a class="logo" href="index.php"><img src="img/logo_1.png" alt=""></a>
       <div class = "auth">
         <?php 
@@ -100,9 +101,20 @@ session_start();
       <a href="#">News</a>
       <a href="#">Other</a>
   </nav>
-  <div class="main">
-      <div class="container"></div>
-  </div>
+    <div class="main">
+        <div class="container">
+            <div class="line">
+            <div class="main-video">Here last video</div>
+            <div class="sidebar">
+                <p>Last series</p>
+                <div class="block1 block"></div>
+                <div class="block2 block"></div>
+                <div class="block3 block"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 
