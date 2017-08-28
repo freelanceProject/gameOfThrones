@@ -1,0 +1,40 @@
+@media screen and (max-width: 1024px){
+  .container{
+    width: 800px;
+  }
+}
+@media screen and (max-width: 800px){
+  .container{
+    width: 600px;
+  }
+  header {
+    height: 75px;
+    .logo {
+      img{
+        width: 154px;
+        height: 61.6px;
+      }
+      span{
+        font-size: 23px;
+        top: -10px;
+      }
+    }
+    .auth{
+      top: 28px;
+      font-size: 14px;
+    }
+  }
+  .line1{
+    min-height: 1500px;
+    flex-direction: column;
+    .main-video{
+      flex-grow: 1!important;
+    }
+    .sidebar{
+      flex-grow: 3!important;
+    }
+  }
+  .line2{
+    flex-direction: column;
+  }
+}

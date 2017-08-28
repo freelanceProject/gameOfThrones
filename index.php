@@ -61,7 +61,6 @@ session_start();
   <div id="wrapper1" class="wrapper">
     <div class="modal">
       <a class="close" onclick="closeModal()">
-        <div class="line1"></div><div class="line2"></div>
       </a>
       <form method="POST">
         <h3>Login</h3>
@@ -81,7 +80,6 @@ session_start();
   <div id = "wrapper2" class = "wrapper">
     <div class="modal">
       <a class="close" onclick="closeModal1()">
-        <div class="line1"></div><div class="line2"></div>
       </a>
       <form action method="POST">
         <h3>Registration</h3>
@@ -112,37 +110,37 @@ session_start();
   </nav>
     <div class="main">
         <div class="container">
-            <div class="line clearfix">
-            <div class="main-video">Here last video</div>
-            <div class="sidebar">
-                <p>Last series</p>
-                <div class="block1 block"></div>
-                <div class="block2 block"></div>
-                <div class="block3 block"></div>
+            <div class="line1 flex">
+                <div class="main-video col-3"></div>
+                <div class="sidebar col-1 flex">
+                    <p>Last series</p>
+                    <div class="block block1 col-1"></div>
+                    <div class="block block2 col-1"></div>
+                    <div class="block block3 col-1"></div>
+                </div>
             </div>
-            </div>
-            <div class="line clearfix">
-                <div class="info"></div>
-                <div class="sidebar1">
+            <div class="line2 flex">
+                <div class="info col-3"></div>
+                <div class="vid col-1">
                     <!-- VK Widget -->
                     <div id="vk_groups"></div>
                     <script type="text/javascript">
-                        VK.Widgets.Group("vk_groups", {mode: 3,width: "290", color1: '353535', no_cover: 1, color2: 'FFF', color3: 'F7CA18'}, 50288287);
+                        VK.Widgets.Group("vk_groups", {mode: 3,width: "auto", color1: '353535', color2: 'FFF', color3: 'F7CA18'}, 50288287);
                     </script>
-                    <div class="fb-page" data-href="https://www.facebook.com/GameOfThrones/?fref=ts" data-tabs="timeline" data-width="290" data-height="798" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GameOfThrones/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GameOfThrones/?fref=ts">Game of Thrones</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/GameOfThrones/?fref=ts" data-tabs="timeline" data-height="792" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/GameOfThrones/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/GameOfThrones/?fref=ts">Game of Thrones</a></blockquote></div>
                 </div>
             </div>
-            <footer>
-                <span class="text"><span>&copy;2017</span> GameOfThrones.zzz - All right reserved</span>
-                <div class="a">
-                    <a href="#">Watch online</a>
-                    <a href="#">Actors</a>
-                    <a href="#">News</a>
-                </div>
-            </footer>
+            </div>
         </div>
+    <footer>
+        <span class="text"><span>&copy;2017</span> GameOfThrones.zzz - All right reserved</span>
+        <div class="a">
+            <a href="#">Watch online</a>
+            <a href="#">Actors</a>
+            <a href="#">News</a>
+        </div>
+    </footer>
     </div>
-</div>
 </body>
 </html>
 
