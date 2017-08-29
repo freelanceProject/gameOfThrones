@@ -64,7 +64,7 @@ header {
   margin-bottom: 170px;
   border-bottom: 1px solid #2d2d2d;
   background: rgba(0, 0, 0, 0.8);
-  height: 100px;
+  min-height: 100px;
 }
 /* line 45, ../sass/main.scss */
 header .logo img {
@@ -124,7 +124,7 @@ header .auth a:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 600px;
+  max-width: 600px;
   height: 300px;
   background: #353535;
 }
@@ -236,88 +236,87 @@ nav a {
   flex-grow: 1;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
   text-align: center;
   border-right: 1px solid white;
   padding-top: 12px;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 192, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 nav a:last-child {
   border: 0;
 }
-/* line 195, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 nav a:hover {
   background: rgba(0, 0, 0, 0.9);
   border-bottom: 3px solid #f1c91a;
 }
 
-/* line 202, ../sass/main.scss */
+/* line 201, ../sass/main.scss */
 .main .container {
   background: #ffffff;
   margin-bottom: 35px;
 }
-/* line 205, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .main .container .flex {
   display: flex;
 }
-/* line 207, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .main .container .flex .col-1 {
   flex: 1;
 }
-/* line 210, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 .main .container .flex .col-2 {
   flex: 2;
 }
-/* line 213, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 .main .container .flex .col-3 {
   flex: 3;
 }
-/* line 216, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 .main .container .flex .col-4 {
   flex: 4;
 }
-/* line 219, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .main .container .flex .col-5 {
   flex: 5;
 }
-/* line 222, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .main .container .flex .col-6 {
   flex: 6;
 }
-/* line 226, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .main .container .line1 {
   height: 500px;
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 230, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .main .container .line1 .main-video, .main .container .line1 .sidebar {
   background: #000;
   margin: 15px 0 0 0;
 }
-/* line 234, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .main .container .line1 .sidebar {
   margin-left: 5px;
   background: rgba(0, 0, 0, 0.5);
   flex-direction: column;
 }
-/* line 238, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .main .container .line1 .sidebar p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
   text-align: center;
 }
-/* line 243, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .main .container .line1 .sidebar .block {
   background: #000;
   margin: 5px 0 0 0;
 }
-/* line 246, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 .main .container .line1 .sidebar .block.block1 {
   margin: 0;
 }
-/* line 252, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 .main .container .line2 {
   margin-top: 15px;
   height: 1020px;
@@ -325,70 +324,59 @@ nav a:hover {
   margin-right: 10px;
   padding-bottom: 15px;
 }
-/* line 258, ../sass/main.scss */
+/* line 257, ../sass/main.scss */
 .main .container .line2 .info, .main .container .line2 .vid {
   background: #000;
 }
-/* line 261, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .main .container .line2 .vid {
   margin-left: 5px;
 }
-/* line 263, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 .main .container .line2 .vid #vk_groups {
   margin-bottom: 10px;
 }
-/* line 266, ../sass/main.scss */
-.main .container .line2 .vid .fb-page {
-  width: 100%;
-}
-/* line 268, ../sass/main.scss */
-.main .container .line2 .vid .fb-page blockquote, .main .container .line2 .vid .fb-page blockquote iframe {
-  width: 100%;
-}
 
-/* line 276, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 footer {
   margin-top: 50px;
   font-family: 'Ubuntu', sans-serif;
-  height: 60px;
+  min-height: 60px;
   width: 100%;
   background: #353535;
-  position: relative;
-  top: 15px;
   border-radius: 0 0 3px 3px;
+  display: flex;
 }
-/* line 285, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 footer .text {
+  text-align: center;
   margin-left: 10px;
   color: white;
-  position: relative;
-  top: 20px;
+  flex: 1;
 }
-/* line 290, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 footer .text span {
   color: #b5b5b5;
 }
-/* line 294, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 footer .a {
-  position: relative;
-  top: 20px;
-  float: right;
+  text-align: center;
+  flex: 1;
 }
-/* line 298, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 footer .a a {
   padding-right: 10px;
   padding-left: 10px;
   color: #F7CA18;
   border-right: 1px solid #717171;
 }
-/* line 302, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 footer .a a:hover {
   text-decoration: underline;
 }
-/* line 306, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 footer .a a:last-child {
   border: 0;
-  margin-right: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -405,7 +393,7 @@ footer .a a:last-child {
 
   /* line 10, ../sass/_media.scss */
   header {
-    height: 75px;
+    min-height: 75px;
   }
   /* line 13, ../sass/_media.scss */
   header .logo img {
@@ -435,10 +423,56 @@ footer .a a:last-child {
   /* line 33, ../sass/_media.scss */
   .line1 .sidebar {
     flex-grow: 3 !important;
+    margin-left: 0;
   }
 
-  /* line 37, ../sass/_media.scss */
-  .line2 {
+  /* line 39, ../sass/_media.scss */
+  .line2 .vid {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 45, ../sass/_media.scss */
+  .container {
+    width: 300px;
+  }
+
+  /* line 48, ../sass/_media.scss */
+  header {
+    display: flex;
     flex-direction: column;
+  }
+  /* line 51, ../sass/_media.scss */
+  header .auth {
+    float: none;
+    position: inherit;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  /* line 60, ../sass/_media.scss */
+  nav a {
+    font-size: 15px;
+  }
+
+  /* line 64, ../sass/_media.scss */
+  .line1 {
+    min-height: 800px;
+    flex-direction: column;
+  }
+  /* line 67, ../sass/_media.scss */
+  .line1 .main-video {
+    flex-grow: 1 !important;
+  }
+  /* line 70, ../sass/_media.scss */
+  .line1 .sidebar {
+    flex-grow: 3 !important;
+    margin-left: 0;
+  }
+
+  /* line 75, ../sass/_media.scss */
+  .question {
+    display: none;
   }
 }

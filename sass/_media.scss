@@ -8,7 +8,7 @@
     width: 600px;
   }
   header {
-    height: 75px;
+    min-height: 75px;
     .logo {
       img{
         width: 154px;
@@ -32,9 +32,47 @@
     }
     .sidebar{
       flex-grow: 3!important;
+      margin-left: 0;
     }
   }
   .line2{
+    .vid{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .container{
+    width: 300px;
+  }
+  header{
+    display: flex;
     flex-direction: column;
+    .auth{
+      float: none;
+      position: inherit;
+      text-align: center;
+      margin-top: 20px;
+      padding-bottom: 15px;
+    }
+  }
+  nav{
+    a{
+      font-size: 15px;
+    }
+  }
+  .line1{
+    min-height: 800px;
+    flex-direction: column;
+    .main-video{
+      flex-grow: 1!important;
+    }
+    .sidebar{
+      flex-grow: 3!important;
+      margin-left: 0;
+    }
+  }
+  .question{
+    display: none;
   }
 }
