@@ -29,7 +29,7 @@ session_start();
   <!--Шапка и авторизация-->
   <header>
     <div class = "container">
-        <a class="logo" href="index.php"><img src="img/logo_1.png" alt=""/><span><b>.</b> ZZZ</span></a>
+        <a class="logo" href="/"><img src="img/logo_1.png" alt=""/><span><b>.</b> ZZZ</span></a>
       <div class = "auth">
         <?php 
           if( !isset($_COOKIE['login']) and !isset($_SESSION['login_done']) ) // Если пользователь не авторизован, вывод входа/регистрации.
@@ -57,7 +57,6 @@ session_start();
     if( !isset($_COOKIE['login']) and !isset($_SESSION['login_done'])  ) // Если пользователь не авторизован, вывод входа/регистрации.
     {
 ?>
-
   <div id="wrapper1" class="wrapper">
     <div class="modal">
       <a class="close" onclick="closeModal()">
